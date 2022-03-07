@@ -1,0 +1,7 @@
+<p>rating-bar works!</p>
+{{max}}
+<ul class="nav">
+    <li *ngFor="let item of points" [class]="item <= currentPoint ? 'nav__item active' : 'nav__item'" class="nav__item"
+        (click)="ratePoint(item)">{{item}}
+    </li>
+</ul>
